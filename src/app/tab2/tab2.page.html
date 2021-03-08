@@ -1,0 +1,60 @@
+
+
+<ion-content padding>
+  <ion-segment scrollable mode="md"  >
+    <ion-segment-button routerLink="/tabs/tab2" routerDirection="forward">
+      <ion-icon name="call"></ion-icon>
+      <ion-label>案例一</ion-label>
+    </ion-segment-button>
+    
+    <ion-segment-button  routerLink="/tabs/tab2/case2" routerDirection="forward">
+      <ion-icon name="cloud-upload"></ion-icon>
+      <ion-label>案例二</ion-label>
+    </ion-segment-button>
+    
+  </ion-segment>
+  <ion-radio-group value=2 (ionChange)="mcqAnswer($event)">
+    <!-- <ion-item> --> 
+      
+      <ion-radio value=1 ></ion-radio>
+           
+        <ion-label for="male">data2</ion-label>
+            &nbsp;
+      <ion-radio value=3></ion-radio> 
+        <ion-label for="male">data3</ion-label>
+        &nbsp;
+        <ion-radio value=4></ion-radio>
+            
+        <ion-label for="male">data4</ion-label>
+            &nbsp;
+            <ion-radio value=5></ion-radio>
+            
+            <ion-label for="male">data5</ion-label>
+            &nbsp;
+            <ion-radio value=6></ion-radio>
+                
+            <ion-label for="male">data6</ion-label>
+            &nbsp; 
+            <ion-radio value=7></ion-radio>
+              
+            <ion-label for="male">data7</ion-label>
+            &nbsp; 
+            <ion-radio value=8></ion-radio>
+              
+            <ion-label for="male">data8</ion-label>
+            &nbsp;
+            <ion-radio value=9></ion-radio>
+              
+            <ion-label for="male">data9</ion-label>
+    <!-- </ion-item> -->
+  </ion-radio-group>
+   <div id='showGraph'>
+     
+  
+   </div>
+  
+   <div id='Chart2'>
+     
+   </div>
+       
+</ion-content>

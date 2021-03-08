@@ -1,0 +1,40 @@
+@import "~angular-vertical-timeline/dist/vertical-timeline.css";
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 10px 10px 10px 10px;
+    opacity: 0.8;
+    background-color: #515a6e;
+    font-size: 14px;
+    line-height: 30px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  .showTimeLine{
+    float: left;
+    width: 200px;
+    height: 965px;
+    overflow:auto;
+    margin: 30px 10px 0px 20px;
+    background-color: antiquewhite;
+  }
+  .showTimeLine::-webkit-scrollbar {
+      display: none;
+  }
+  .showGraph{
+     width: 1700px;
+  }
+  .time{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  .timeActive{
+    color: red;
+    font-size: 20px;
+    position: relative;
+    top: -5px ;
+  }

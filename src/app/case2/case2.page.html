@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultBackLink"></ion-back-button>
+    </ion-buttons>
+    <ion-title>case2</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-radio-group value=2 (ionChange)="mcqAnswer($event)">
+    <!-- <ion-item> --> 
+      
+      <ion-radio value=2 ></ion-radio>
+           
+        <ion-label for="male">data1</ion-label>
+            &nbsp;
+      <ion-radio value=3></ion-radio> 
+        <ion-label for="male">data2</ion-label>
+        &nbsp;
+        <ion-radio value=4></ion-radio>
+            
+        <ion-label for="male">data3</ion-label>
+            &nbsp; 
+            <ion-radio value=5></ion-radio>
+            <ion-label for="male">data4</ion-label>
+            &nbsp; 
+            <ion-radio value=6></ion-radio>
+                
+            <ion-label for="male">data5</ion-label>
+            &nbsp; 
+            <ion-radio value=7></ion-radio>
+              
+            <ion-label for="male">data6</ion-label>
+            &nbsp; 
+            <ion-radio value=8></ion-radio>
+              
+            <ion-label for="male">data7</ion-label>
+            &nbsp;  
+            <ion-radio value=9></ion-radio> 
+            <ion-label for="male">data8</ion-label>
+    <!-- </ion-item> -->
+  </ion-radio-group>
+  <div id='showGraphcase2'>
+  </div>
+</ion-content>

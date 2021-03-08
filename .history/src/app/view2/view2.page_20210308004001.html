@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultBackLink"></ion-back-button>
+    </ion-buttons>
+    <ion-title>view2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+
+       <div class="showTimeLine">
+        <table class='Timeline'>
+          <ul>
+            <li  style="color:'{{(key === tiemCircle ? 'red' : 'blue')}}'"  *ngFor='let item of timeLine' >
+              <p class="{{item.index === tiemCircle ? 'time timeActive' : 'time '}}" (click)="changeGraph(item.index,item.date)">{{item.date}}</p>
+            </li>
+          </ul>
+        
+        </table>
+      <!-- <button @click="exportData">export</button> -->
+      </div>
+  
+      <div class="showGraph">
+        <svg id="topo" width="500" height="520">
+          <g class="graphContent" transform="translate(5,30)">
+            <defs>
+              <marker id="arrowhead" viewBox="-0 -5 10 10" refX="23" refY="0" orient="auto" markerWidth="13" markerHeight="13" xoverflow="visible">
+                <path d="M 0,-5 L 10 ,0 L 0,5" fill="#999" style="stroke: none;"></path>
+              </marker>
+            </defs>
+          </g>
+        </svg>
+      </div>
+  
+       
+ </ion-content>

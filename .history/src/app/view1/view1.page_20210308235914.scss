@@ -1,0 +1,14 @@
+.button {
+    width: 120px;
+    height: 30px;
+    background-color: #777;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #eda14b;
+  }

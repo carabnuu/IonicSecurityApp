@@ -1,0 +1,24 @@
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    padding: 10px 10px 10px 10px;
+    opacity: 0.8;
+    background-color: #515a6e;
+    font-size: 14px;
+    line-height: 30px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    color: #fff;
+}
+ion-segment{
+    background-color: #6a6999; 
+}
+ion-label{
+    color: white;
+} 
+#search{
+    right:10px;
+    float:right;
+    argin-top:100px;
+}

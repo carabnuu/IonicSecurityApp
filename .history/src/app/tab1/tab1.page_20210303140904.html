@@ -1,0 +1,50 @@
+<script src="../plugin/ion-floating-menu.min.js"></script>
+<script src="../plugin/ion-floating-menu.min.css"></script>
+
+<ion-content padding>
+  <ion-segment scrollable mode="md" [(ngModel)]="segmentSelected">
+    <ion-segment-button routerLink="/tabs/tab1" routerDirection="forward">
+      <ion-icon color="light" name="call"></ion-icon>
+      <ion-label>布局一</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button routerLink="/tabs/tab1/view1" routerDirection="forward">
+      <ion-icon color="light" name="cloud-upload"></ion-icon>
+      <ion-label>布局二</ion-label>
+    </ion-segment-button>
+    <ion-segment-button routerLink="/tabs/tab1/view2" routerDirection="forward">
+      <ion-icon color="light" name="document-text"></ion-icon>
+      <ion-label>布局三</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="tooltip">
+    <p><b>name:</b> <span class="tipName">baojian52.com</span></p>
+    <p><b>category:</b> <span class="tipDomain">Domain</span></p>
+    <p><b>industry:</b> <span class="tipIndustry">涉枪</span></p>
+    <p><b>is_alive:</b> <span class="tipIsAlive">true</span></p>
+  </div>
+  <ion-floating-button click="myEvent()" has-footer="false" button-color="#2AC9AA" icon="ion-plus" icon-color="#fff">
+  </ion-floating-button>  <div id='Chart1'> 
+    <ion-fab-button id="search" color="secondary">
+
+    <ion-icon name="search" ></ion-icon>
+</ion-fab-button>
+<ion-menu side="end" menuId="first" contentId="content">  
+  <ion-header>  
+    <ion-toolbar color="success">  
+      <ion-title>Content</ion-title>  
+    </ion-toolbar>   
+  </ion-header>  
+  <ion-content color="light">  
+    <ion-list *ngFor="let pages of navigate">  
+      <ion-menu-toggle auto-hide="true">  
+        <ion-item [routerLink]="pages.url" routerDirection="forward">  
+          <ion-icon [name]="pages.icon" slot="start"></ion-icon>  
+            {{pages.title}}   
+        </ion-item>  
+      </ion-menu-toggle>  
+    </ion-list>  
+  </ion-content>   
+</ion-menu>  
+  </div>
+</ion-content>
